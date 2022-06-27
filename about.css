@@ -1,0 +1,57 @@
+#about {
+  border-radius: 50%;
+  width: 125px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+body {
+  font-family: "Shella Clean";
+  color: #black;
+}
+
+#description {
+  text-align: center;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  height: 60%;
+}
+
+#suli {
+  margin: auto;
+  padding-left: 400px;
+  padding-right: 400px;
+  height: 40%;
+
+}
+
+
+.column {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+    /*-webkit-column-gap: 40px;/* Chrome, Safari, Opera */
+    /*column-gap: 40px; */
+    /* -webkit-column-gap: 40px; /* Chrome, Safari, Opera */ */
+
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

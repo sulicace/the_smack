@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+    .centered {
+        font-size: 2.85em;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        padding: 50px;
+        margin: 0 auto;
+        color:  white;
+        font-family: "Shella Clean"
+      }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 2px;
+      flex: 33.33%;
+      /* padding: 5px; */
+      position: relative;
+    }
+
+    .column:hover .centered {
+        font-size: 5em;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+      }
+
+
+    .column:hover img {
+      webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+      filter: blur(4px);
+    }
+
+
+      h1 {
+        font-family: "Harmony";
+        font-size: 10em;
+      }
+
+    body {
+      font-family: "Vogue";
+    }
+
+    footer {
+      font-family:"Lato", sans-serif;
+    }
+    /* body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;} */
+    /* body, html {
+        font-family: "Bodoni";
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    } */
+    .w3-top {
+      font-family:"Lato", sans-serif;
+    }
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        /* background-image: url('claire.jpg'); */
+        min-height: 75%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("/w3images/parallax2.jpg");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("/w3images/parallax3.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+        }
+    }
+
+    .raising {
+      text-align: center;
+      font-family:"Lato", sans-serif;
+      margin-bottom: 50px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+    </div>
+    <div><h1 id="home">The Smack</h1></div>
+    <br>
+    <div class="raising">The Smack of reality.</div>
+    <div class="raising">Raising awareness for crucial problems.</div>
+    <div class="main">
+      <div class="row">
+        <div class="column">
+          <a href="children.html"><img src="field2.jpg" alt="Field" style="width:100%">
+          <div class="centered">Child Labor</div></a>
+        </div>
+        <div class="column">
+          <a href="immigration.html"><img src="immigration2.jpg" alt="Immigration" style="width:100%">
+          <div class="centered">Immigration</div></a>
+        </div>
+        <div class="column">
+          <a href="sexualviolence.html"><img src="sexualviolence.jpg" alt="humanrights.png" style="width:100%">
+          <div class="centered">Sexual Violence</div></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <a href="humantrafficking.html"><img src="chains.jpg" alt="chains" style="width:100%">
+          <div class="centered">Human Trafficking</div></a>
+        </div>
+        <div class="column">
+          <a href="lgbtq.html"><img src="lgbtq2.jpg" alt="LGBTQ+" style="width:100%">
+          <div class="centered">LGBTQ+ Rights</div></a>
+        </div>
+        <div class="column">
+          <a href="schoolsafety.html"><img src="education2.jpg" alt="Education" style="width:100%">
+          <div class="centered">School Safety</div></a>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="column">
+          <a href="poverty.html"><img src="poverty.jpg" alt="Poverty" style="width:100%">
+          <div class="centered">Poverty</div></a>
+        </div>
+        <div class="column">
+          <a href="environment.html"><img src="environment.jpg" alt="Environment" style="width:100%">
+          <div class="centered">Environment</div></a>
+        </div>
+        <div class="column">
+          <a href="justice.html"><img src="justice.jpg" alt="Justice System" style="width:100%">
+          <div class="centered">Justice System</div></a>
+        </div> -->
+    </div>
+    <footer>
+    <br>
+    <br>
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+    <!-- Footer -->
+    <!-- <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i> -->
+      <!-- </div> -->
+    </footer>
+    <script>
+    function myMap()
+    {
+      myCenter=new google.maps.LatLng(41.878114, -87.629798);
+      var mapOptions= {
+        center:myCenter,
+        zoom:12, scrollwheel: false, draggable: false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+      var marker = new google.maps.Marker({
+        position: myCenter,
+      });
+      marker.setMap(map);
+    }
+
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,116 @@
+   body {
+  font-family: "Shella Clean";
+  color: #black;
+}
+
+h1 {
+  font-family: "Harmony";
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 6px;
+  font-size: 8em;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #F5F5F5;
+    opacity: 1;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #cc9900;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+
+/* Change background on mouse-over */
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Main content */
+.main {
+    /* margin-top: 10px; /* Add a top margin to avoid content overlay */ */
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* Container holding the image and the text */
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+  flex: 33.33%;
+  /* padding: 5px; */
+  position: relative;
+  text-align: center;
+}
+
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 2px;
+  flex: 33.33%;
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.row {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+
+/* Container holding the image and the text */
+
+/* Centered text */
+.centered {
+    font-size: 2.85em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    /* background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; */
+    color: #ffcc00;
+}
+
+img:hover {
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+}
